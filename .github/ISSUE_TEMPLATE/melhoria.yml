@@ -1,0 +1,118 @@
+{
+  "name": "Melhoria",
+  "description": "Propor uma mudança que facilite o uso do portal.",
+  "title": "[Melhoria][Área] ",
+  "labels": [
+    "enhancement"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Registre um problema ou uma proposta por issue. Use o título [Tipo][Área] seguido de uma descrição concreta. Evite expor senhas, notas ou dados pessoais nas evidências."
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "duplicates",
+      "attributes": {
+        "label": "Busca por relatos existentes",
+        "options": [
+          {
+            "label": "Procurei nas issues e não encontrei um relato do mesmo problema ou proposta.",
+            "required": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "input",
+      "id": "page",
+      "attributes": {
+        "label": "Página do portal",
+        "description": "Cole o link completo da página."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "author",
+      "attributes": {
+        "label": "Nome e turma",
+        "description": "Para a atividade de POO, informe seu nome e a turma. Não informe matrícula. Se não participar da atividade, escreva \"Visitante\"."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "difficulty",
+      "attributes": {
+        "label": "Dificuldade observada",
+        "description": "Descreva uma situação real de uso."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Passos para observar a situação atual",
+        "description": "Explique como outra pessoa consegue conferir a dificuldade.",
+        "placeholder": "1. Abrir a página...\n2. Fazer...\n3. Observar..."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "proposal",
+      "attributes": {
+        "label": "Proposta de melhoria",
+        "description": "Que comportamento ou mudança você propõe?"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "benefit",
+      "attributes": {
+        "label": "Benefício para quem usa",
+        "description": "Quem a mudança ajuda e de que maneira?"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "evidence",
+      "attributes": {
+        "label": "Captura de tela ou vídeo",
+        "description": "Anexe uma evidência da situação atual. Para uma proposta sem tela correspondente, explique o contexto."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "environment",
+      "attributes": {
+        "label": "Navegador e dispositivo",
+        "description": "Exemplo: Firefox no Windows, notebook."
+      },
+      "validations": {
+        "required": true
+      }
+    }
+  ]
+}
