@@ -1,0 +1,118 @@
+{
+  "name": "Bug",
+  "description": "Relatar uma função com comportamento incorreto.",
+  "title": "[Bug][Área] ",
+  "labels": [
+    "bug"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Registre um problema ou uma proposta por issue. Use o título [Tipo][Área] seguido de uma descrição concreta. Evite expor senhas, notas ou dados pessoais nas evidências."
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "duplicates",
+      "attributes": {
+        "label": "Busca por relatos existentes",
+        "options": [
+          {
+            "label": "Procurei nas issues e não encontrei um relato do mesmo problema ou proposta.",
+            "required": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "input",
+      "id": "page",
+      "attributes": {
+        "label": "Página do portal",
+        "description": "Cole o link completo da página."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "author",
+      "attributes": {
+        "label": "Nome e turma",
+        "description": "Para a atividade de POO, informe seu nome e a turma. Não informe matrícula. Se não participar da atividade, escreva \"Visitante\"."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "attributes": {
+        "label": "Descrição curta",
+        "description": "Explique o problema em poucas frases."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Passos para reproduzir",
+        "description": "Comece pela página inicial ou pelo link informado.",
+        "placeholder": "1. Abrir a página...\n2. Clicar em...\n3. Observar..."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "current",
+      "attributes": {
+        "label": "Comportamento atual",
+        "description": "O que acontece quando você executa os passos?"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "Comportamento esperado",
+        "description": "O que deveria acontecer?"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "evidence",
+      "attributes": {
+        "label": "Captura de tela ou vídeo",
+        "description": "Arraste os arquivos para este campo ou use o botão de anexos. Mostre a tela e o detalhe do problema."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "environment",
+      "attributes": {
+        "label": "Navegador e dispositivo",
+        "description": "Exemplo: Chrome no Android, celular. Inclua a versão se souber."
+      },
+      "validations": {
+        "required": true
+      }
+    }
+  ]
+}
